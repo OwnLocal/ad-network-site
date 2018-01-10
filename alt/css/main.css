@@ -1,0 +1,225 @@
+
+body {
+	font-family: 'Avenir', sans-serif;
+	max-width: 1260px;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+.nav {
+	background-color: white;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+	z-index: 2;
+	padding: 10px 0;
+}
+
+.row {
+	margin: 0px 0px;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.hero-section {
+	color: white;
+	background: linear-gradient(to bottom right, #08013B, #24203E);
+/*box-shadow: 1px 5px 5px black inset;*/
+	height: auto;
+	margin-bottom: 20px;
+	padding: 45px 10px;
+}
+
+.demo-section {
+	padding: 0px;
+}
+
+.be-seen-text {
+	width: 90%;
+	margin: auto;
+}
+
+.ad-outline {
+   	display: block;
+      width: 310px;
+      height: 310px;
+      margin: auto;
+   	padding: 0px;
+   	border: 2px dashed #58C1AB;
+   }
+
+ iframe {
+	display: block;
+	margin: 5px auto;
+}
+
+.callouts {
+	display: none;
+}
+
+.callouts p {
+	position: relative;
+	left: 7%;
+}
+
+.vl {display: none;}
+
+.logo {
+	height: 30px;
+	display: block;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.hero-text {
+	display: inline-block;
+	width: 45%;
+	max-width: 400px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 1em;
+}
+
+p {
+	font-size: .4em;
+}
+
+.newspaper {
+	position: absolute;
+	left: 45%;
+	top: 0px;
+	min-width: 55%;
+	max-height: 97%;
+}
+
+.features-container {
+	margin: auto;
+	padding: 10px 15px;
+	display: flex;
+	background: linear-gradient(to bottom right, #91E2D5, #49B39D);
+	justify-content: space-between;
+}
+
+
+
+.feature {
+	width: 30%;
+	margin: 0 5px;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	padding: 5px 0;
+}
+
+.icon img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+h6 {
+	margin: 5px 0;
+}
+
+.get-results {
+	color: white;
+	background: linear-gradient(to bottom right, #08013B, #24203E);
+	margin-bottom: 0px;
+	padding: 50px 0;
+}
+
+.text-container {
+	margin: 15px 0;
+}
+
+hr {
+	color: white;
+	/*height: 0px;*/
+	/*border: .3px solid white;*/
+	margin: 30px 0 15px 0;
+}
+
+.email {
+	margin: 5px 0;
+}
+
+.news-site {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	bottom: -15px;
+}
+
+
+/** MEDIA QUERIES **/
+
+
+
+/*  Ipad   */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  
+
+{
+	.logo {margin-left: 5%;}
+	.hero-text {margin-left: 5%; width: 40%;}
+	h1 { font-size: 24pt;}
+	h6 {font-size: 14pt;}
+	p { font-size: 12pt;}
+	.ad-outline {
+		display: inline-block;
+		margin-left: 5%;
+	}
+	.features-container {padding: 3% 5%;}
+	.icon {width: 50px;}
+	.be-seen-text {width: 40%; display: inline-block; position: relative; left: 5%; bottom: 40px;}
+	.text-container {width: 90%; margin: auto;}
+}
+
+/*  Ipad Pro   */
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+
+{ 
+	.hero-section {padding-bottom: 50px;}
+	.hero-text {width: 30%;}
+	.be-seen-text {width: 40%; display: inline-block; position: relative; left: 10%; bottom: 50px;}
+	.get-results {position: relative;}
+	.text-container {width: 40%; display: inline-block; margin-left: 5%; position: relative; bottom: 10%;}
+	.news-site {height: 95%; width: auto; display: inline-block; position: absolute; bottom: 0px; margin-left: 5%;}
+}
+
+@media screen 
+and (min-device-width: 1200px) 
+
+{
+	.logo {margin-left: 5%;}
+	.hero-text {margin-left: 5%; width: 35%; padding: 50px 0;}
+	h1 { font-size: 24pt;}
+	h6 {font-size: 14pt;}
+	p { font-size: 12pt;}
+	.ad-outline {
+		display: inline-block;
+		margin-left: 5%;
+	}
+	.callouts {display: inline-block; width: 15%; margin-left: 20px; position: relative; top: -20px;}
+	.callouts h6 {font-size:12pt;}
+	.callouts p {font-size: 9pt; margin: 5px 0 10px 0;}
+	.vl {display: inline-block; border-left: 1px solid black; height: 300px; position: relative; left: 5%;}
+	.be-seen-text {width: 30%; display: inline-block; position: relative; left: 10%; bottom: 50px;}
+	.features-container {margin: auto; padding: 20px 5%;}
+	.icon {width: 55px;}
+	.get-results {position: relative;}
+	.text-container {width: 40%; display: inline-block; margin-left: 5%; position: relative; bottom: 10%;}
+	.news-site {height: 95%; width: auto; display: inline-block; position: absolute; bottom: 0px; margin-left: 5%;}
+
+}
